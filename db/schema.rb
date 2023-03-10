@@ -51,7 +51,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_10_033703) do
     t.date "posted_on"
     t.integer "place_id"
     t.integer "user_id"
-    @post.uploaded_image.attach(params["post"]["uploaded_image"])
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
